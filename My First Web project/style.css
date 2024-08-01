@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.hero-section {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to top, #3204fd77, #9907fa7a), url(images/laptop.jpg) no-repeat top center;
+    background-size: cover;
+}
+
+.logoTop {
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    font-weight: 500;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 80px;
+    align-items: center;
+    background: rgb(15, 96, 143);
+    position: fixed;
+    z-index: 100;
+}
+
+ul{
+    display: flex;
+}
+
+li {
+    list-style: none;
+    padding: 0 15px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.nav-links {
+    text-decoration: none;
+    color: #fff;
+}
+
+.hero-message-wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    
+    justify-content: center;
+    align-items: center;
+
+}
+
+.hero-message {
+    max-width: 650px;
+    text-align: justify;
+}
+
+.hero-message h1 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.3;
+    position: relative;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.forHero {
+    color: red;
+}
+
+.hero-button {
+    display: block;
+    position: absolute;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 10px 20px;
+    background: rgb(40, 222, 12);
+    border-radius: 16px;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.hero-button:hover {
+    background: #fff;
+    color: rgb(40, 222, 12);
+}
+
+/***Hero Section ends here*******/
+
+/***Skills-Section starts*******/
+.skills-section {
+    width: 100%;
+    height: 100vh;
+    padding: 3rem;
+    align-content: center;
+    background: rgb(195, 237, 246);
+}
+
+.skills-section h2 {
+    text-align: center;
+    position: relative;
+    color: #044144;
+}
+
+.skills-section h2::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 4rem;
+    height: 0.3rem;
+    background: #3b0ac3;
+    bottom: 0;
+    left: calc(50% - 2rem);
+}
+
+.skills {
+    padding: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-evenly;
+}
+
+.skill {
+    flex: 1 1 15rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background: #fff;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.logo {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    background: #16bb69;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.logo i {
+    font-size: 35px;
+    color: #fff;
+}
+
+.skill h4 {
+    text-align: center;
+    padding-top: 16px;
+    color: #434141;
+    font-size: 20px;
+}
+
+.skill p {
+    text-align: center;
+    color: #494949;
+    font-size: 15px;
+}
+
+/***Skills-Section ends*******/
+
+/*** Contact section start ***/
+
+.contact-section {
+    width: 100%;
+    height: 80vh;
+    background: linear-gradient(to top, #b9b1de77, #9260b37a), url(images/luke.jpg) no-repeat top center;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 80px;
+}
+
+.contact-section h2 {
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    color: rgb(250, 250, 251);
+}
+
+.contacts {
+    padding-top: 60px;
+}
+
+.contact {
+    display: flex;
+    padding-top: 25px;
+    align-items: center;
+}
+
+.contact i {
+    font-size: 25px;
+    color: #fff;
+    padding-right: 15px;
+}
+
+.contact p {
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+}
+
+/*** Contact section end ***/
+
+/*** About Section start ***/
+
+.about {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    background: linear-gradient(
+        to right,
+        #54d2eb 0%,
+        #84e1f4 50%,
+        #16bb69 50%,
+        #16bb69 100%
+    );
+}
+
+.about .about-text {
+    width: 50%;
+    padding: 80px;
+}
+
+.about .about-text h2 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.about .about-text p {
+    font-size: 15px;
+    color: #494949;
+}
+
+.about .about-img {
+    width: 50%;
+    padding: 80px;
+    background: url(images/undraw_Freelancer_re_irh4.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*** About Section end ***/
+
+
+/*** Projects Section start ***/
+
+.myprojects-section {
+    width: 100%;
+    height: 80vh;
+    padding: 80px;
+    background: #b0dde6;
+}
+
+.myprojects-section h2 {
+    text-align: center;
+}
+
+/*** Projects Section end ***/
+
+/*** Footer Section start ***/
+footer {
+    width: 100%;
+    height: 40vh;
+    background: #494949;
+    padding-left: 80px;
+}
+
+footer p {
+    text-align: center;
+    font-size: 18px;
+    color: #848484;
+}
+/*** Footer Section end ***/
